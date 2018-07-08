@@ -80,6 +80,9 @@ b {
 
 .work-img-container img {
     margin: 10px;
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
 }
 
 .text-col {
