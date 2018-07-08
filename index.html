@@ -5,33 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lee Warrick</title>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,400i,700,900" rel="stylesheet">
     <link rel="stylesheet" href="./assets/aos/aos.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <!-- nav -->
     <ul class="row sticky nav">
         <li><a href="#top">Top</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#work">My Work</a></li>
+        <li><a href="#connect">Connect</a></li>
     </ul>
+
+    <!-- main jumbotron with title -->
     <header class="jumbotron" id="top">
         <div class="row x-center">
             <div class="column x-center y-center jumbo-text">
-                <h1 data-aos="fade-right" data-aos-delay=800>LEE <b>WARRICK</b></h1>
-                <h2 data-aos="fade-left" data-aos-delay=1200>Web Developer</h2>
-                <p data-aos="fade-up" data-aos-delay=1500><i>I make websites and web apps and other fun things and some not so fun things.</i></p>
+                <h1 data-aos="fade-right" data-aos-delay=500>LEE <b>WARRICK</b></h1>
+                <h2 data-aos="fade-left" data-aos-delay=700>Web Developer</h2>
+                <p data-aos="fade-up" data-aos-delay=1000><i>I make websites and web apps and other fun things and some not so fun things.</i></p>
             </div>
         </div>
     </header>
-    <section class="white-box row split y-center" id="about">
-        <div class="text-col" data-aos="fade-right">
-            <p>Creativity is important to me. I spend a lot of time thinking about what I can make, write, or build next. That's why I decided to pursue a career in website development. If I could spend my day flexing my creative brain cells for profit, I don't think I'd ever "work" another day in my life.</p>
+
+    <!-- about section -->
+    <section class="white-box column x-center hiei" id="about">
+        <div class="row x-center">
+            <h2 data-aos="flip-up">Who am I?</h2>
+        </div>
+        <div class="row split">
+            <div class="text-col" data-aos="fade-right">
+
+            </div>
+            <div class="text-col" data-aos="fade-left">
+                <p>Creativity is important to me. I spend a lot of time thinking about what I can make, write, or build next. That's why I decided to pursue a career in website development. If I could spend my day flexing my creative brain cells for profit, I don't think I'd ever "work" another day in my life.</p>
+
+            </div>
         </div>
     </section>
-    <section class="blue-box" id="projects">
 
+    <section class="blue-box column x-center y-center" id="work">
+        <h2>Corkboard</h2>
+        <div class="row x-center y-center">
+            <div class="work-img-container row x-center y-center">
+                <img src="http://via.placeholder.com/350x200">
+                <img src="http://via.placeholder.com/150x350">
+            </div>
+            <div class="text-col">
+                <h3>About</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et libero, tempore saepe error magnam a non blanditiis reiciendis consequuntur nisi aperiam ab, unde, fuga dolorum. Modi dolorem debitis fuga. Laborum?
+                Ullam dolore autem quo! Officiis quis quod aspernatur modi tenetur similique dolore possimus qui velit fuga molestias fugit quidem nulla, odit quas totam natus excepturi nesciunt tempore reiciendis explicabo aliquid?
+                Excepturi fugit quidem ipsa est minima aspernatur, maxime doloremque voluptate porro inventore? Corrupti aliquid in tempore facilis nihil natus necessitatibus optio? Eveniet reiciendis tempora excepturi iusto eius quibusdam? Labore, pariatur.</p>
+            </div>
+        </div>
     </section>
+    <section class="white-box column " id="work">
+        <h2>Corkboard</h2>
+        <div class="row x-center y-center">
+            <div class="text-col">
+                <h3>About</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et libero, tempore saepe error magnam a non blanditiis reiciendis consequuntur nisi aperiam ab, unde, fuga dolorum. Modi dolorem debitis fuga. Laborum?
+                Ullam dolore autem quo! Officiis quis quod aspernatur modi tenetur similique dolore possimus qui velit fuga molestias fugit quidem nulla, odit quas totam natus excepturi nesciunt tempore reiciendis explicabo aliquid?
+                Excepturi fugit quidem ipsa est minima aspernatur, maxime doloremque voluptate porro inventore? Corrupti aliquid in tempore facilis nihil natus necessitatibus optio? Eveniet reiciendis tempora excepturi iusto eius quibusdam? Labore, pariatur.</p>
+            </div>
+            <div class="work-img-container row x-center y-center">
+                <img src="http://via.placeholder.com/350x150">
+                <img src="http://via.placeholder.com/150x350">
+            </div>
+        </div>
+    </section>
+
     <script src="./assets/aos/aos.js"></script>
     <script>
         AOS.init({
