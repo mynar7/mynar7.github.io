@@ -93,13 +93,13 @@ b {
 
 .blue-box {
     color: rgb(250, 250, 250);    
-    height: 900px;
+    height: 1000px;
     background-color: rgb(73, 109, 177);
     clip-path: polygon(0 10%, 37% 0, 100% 10%, 100% 90%, 63% 100%, 0 90%);
 }
 
 .white-box {
-    height: 900px;
+    height: 1000px;
 }
 
 section h2, h3 {
@@ -109,6 +109,12 @@ section h2, h3 {
 .icons {
     font-size: 7em;
     text-align: center;
+}
+
+.divider h2 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-weight: 900;
 }
 
 /* Custom */
@@ -156,7 +162,13 @@ section h2, h3 {
     margin-top: 150px;
 }
 
+footer {
+    height: 15vh;
+}
 
+.connect .text-col:nth-child(2), .connect .text-col:nth-child(2)>h3 {
+    text-align: right;
+}
 
 @media screen and (max-width: 768px) {
     h1 {
@@ -175,4 +187,9 @@ section h2, h3 {
     section.white-box>div>div:nth-child(2) {
         order: -1;
     } 
+
+    .connect .text-col:nth-child(2), .connect .text-col:nth-child(2)>h3 {
+        text-align: center;
+        margin-top: 30px;
+    }
 }
