@@ -184,6 +184,9 @@ footer {
     .blue-box, .white-box {
         height: 1400px;
     }
+    .white-box .work-img-container {
+        order: -1;
+    }
     .icons {
         font-size: 4em;
     }
