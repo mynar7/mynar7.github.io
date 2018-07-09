@@ -46,6 +46,10 @@ b {
     font-weight: 900;
 }
 
+p {
+    margin: 15px 0
+}
+
 .row, .column {
     display: flex;
     flex-wrap: wrap;
@@ -158,8 +162,8 @@ section h2, h3 {
     background-size: cover;
 }
 
-.hiei div:first-child {
-    margin-top: 150px;
+.hiei h2 {
+    margin: 150px 0;
 }
 
 footer {
@@ -183,10 +187,6 @@ footer {
     .icons {
         font-size: 4em;
     }
-    /* ensure image then text on mobile for projects */
-    section.white-box>div>div:nth-child(2) {
-        order: -1;
-    } 
 
     .connect .text-col:nth-child(2), .connect .text-col:nth-child(2)>h3 {
         text-align: center;
