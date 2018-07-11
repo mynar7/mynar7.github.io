@@ -95,6 +95,10 @@ p {
     width: 300px;
 }
 
+.white-box p i, .blue-box p i {
+    font-size: 2em;
+}
+
 .blue-box {
     color: rgb(250, 250, 250);    
     height: 1000px;
