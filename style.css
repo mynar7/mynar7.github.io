@@ -95,10 +95,6 @@ p {
     width: 300px;
 }
 
-.white-box p i, .blue-box p i {
-    font-size: 2em;
-}
-
 .blue-box {
     color: rgb(250, 250, 250);    
     height: 1000px;
@@ -176,6 +172,10 @@ footer {
 
 .connect .text-col:nth-child(2), .connect .text-col:nth-child(2)>h3 {
     text-align: right;
+}
+
+i.devicon-github-plain, i.devicon-github-colored {
+    font-size: 2em;
 }
 
 @media screen and (max-width: 768px) {
