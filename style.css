@@ -164,6 +164,10 @@ section h2, h3 {
     margin: 150px 0;
 }
 
+.connect {
+    height: 800px;
+}
+
 footer {
     height: 15vh;
     color: rgb(250, 250, 250);    
@@ -195,9 +199,11 @@ i.devicon-github-plain, i.devicon-github-colored {
     .icons {
         font-size: 4em;
     }
-
     .connect .text-col:nth-child(2), .connect .text-col:nth-child(2)>h3 {
         text-align: center;
         margin-top: 30px;
+    }
+    .connect {
+        height: 800px;
     }
 }
