@@ -14,6 +14,7 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
+    position: relative;
 }
 
 /* GLOBALS */
@@ -34,12 +35,17 @@ h1 {
 }
 
 h2 {
-    font-weight: 400;
     font-size: 2em;
+    position: relative;
 }
 
 h3 {
+    font-weight: 400;
     font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.3em;
 }
 
 b {
@@ -47,7 +53,8 @@ b {
 }
 
 p {
-    margin: 15px 0
+    margin: 15px 0;
+    font-size: 1.2em;
 }
 
 .row, .column {
@@ -78,6 +85,26 @@ p {
     top: 0;
 }
 
+a>h2:after, ul.nav>li>a:after, .connect a:after, i.devicon-github-plain:after {
+    content: "";
+    background: rgb(250, 250, 250);
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 1.5px;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.white-box a>h2:after, .connect a:after, .white-box i.devicon-github-plain:after {
+    background: rgb(92, 92, 92);
+}
+
+a>h2:hover:after, ul.nav>li>a:hover:after, .connect a:hover:after, i.devicon-github-plain:hover:after {
+    opacity: 1;
+}
+
 .work-img-container {
     margin: 0 20px;
 }
@@ -97,21 +124,23 @@ p {
 
 .blue-box {
     color: rgb(250, 250, 250);    
-    height: 1000px;
+    height: 1200px;
     background-color: rgb(73, 109, 177);
-    clip-path: polygon(0 10%, 37% 0, 100% 10%, 100% 90%, 63% 100%, 0 90%);
+    clip-path: polygon(0 10%, 37% 0, 100vw 10%, 100vw 90%, 63% 100%, 0 90%);
 }
 
 .white-box {
     height: 1000px;
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
 }
 
 section h2, h3 {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .icons {
-    font-size: 7em;
+    font-size: 5em;
     text-align: center;
 }
 
@@ -142,6 +171,7 @@ section h2, h3 {
 .nav {
     flex-wrap: nowrap;
     width: 100vw;
+    height: 30px;
     color: rgb(250, 250, 250);
     background-color: rgb(73, 109, 177);
 }
@@ -164,6 +194,10 @@ section h2, h3 {
     margin: 150px 0;
 }
 
+.hiei .text-col {
+    margin: 0 50px;
+}
+
 .connect {
     height: 800px;
 }
@@ -180,12 +214,15 @@ footer {
 }
 
 i.devicon-github-plain, i.devicon-github-colored {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 4em;
+    }
+    p {
+        font-size: 1em;
     }
     .nav {
         justify-content: space-around;
