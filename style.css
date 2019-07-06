@@ -18,15 +18,18 @@ a {
 }
 
 /* GLOBALS */
-
-html, body {
+html {
+    overflow-x: hidden
+}
+body {
+    overflow-x: hidden;
     height: 100%;
-    width: 100%;
-    color: rgb(92, 92, 92);
+    width: 100vw;
+    color: rgb(80, 80, 80);
     background-color: rgb(250, 250, 250);
-    margin: 0 auto;
+    /* margin: 0 auto; */
     font-family: 'Titillium Web', sans-serif;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 }
 
 h1 {
@@ -48,7 +51,7 @@ h4 {
     font-size: 1.3em;
 }
 
-b {
+strong {
     font-weight: 900;
 }
 
@@ -85,23 +88,30 @@ p {
     top: 0;
 }
 
-a>h2:after, ul.nav>li>a:after, .connect a:after, i.devicon-github-plain:after {
+a.link:after, a>h2:after, ul.nav>li>a:after, .connect a:after, i.devicon-github-plain:after {
     content: "";
     background: rgb(250, 250, 250);
     position: absolute;
     left: 0;
-    bottom: -1px;
-    width: 100%;
-    height: 1.5px;
+    bottom: 20%;
+    min-width: 100%;
+    height: 10%;
+    opacity: 0.2;
+    transition: opacity 0.2s, bottom 0.2s, height 0.2s;
+}
+i.devicon-github-plain:after {
+    height: 100%;
+    border-radius: 100px;
     opacity: 0;
-    transition: opacity 0.2s;
 }
 
-.white-box a>h2:after, .connect a:after, .white-box i.devicon-github-plain:after {
-    background: rgb(92, 92, 92);
+.white-box a.link:after, .white-box a>h2:after, .connect a:after, .white-box i.devicon-github-plain:after {
+    background: rgb(80, 80, 80);
 }
 
-a>h2:hover:after, ul.nav>li>a:hover:after, .connect a:hover:after, i.devicon-github-plain:hover:after {
+a.link:hover:after, a>h2:hover:after, ul.nav>li>a:hover:after, .connect a:hover:after, i.devicon-github-plain:hover:after {
+    bottom: 1px;
+    height: 1.5px;
     opacity: 1;
 }
 
@@ -110,8 +120,9 @@ a>h2:hover:after, ul.nav>li>a:hover:after, .connect a:hover:after, i.devicon-git
 }
 
 .work-img-container img {
-    margin: 10px;
+    /* margin: 10px; */
     max-width: 350px;
+    max-height: 400px;
     height: auto;
     border-radius: 10px;
 }
@@ -123,14 +134,14 @@ a>h2:hover:after, ul.nav>li>a:hover:after, .connect a:hover:after, i.devicon-git
 }
 
 .blue-box {
-    color: rgb(250, 250, 250);    
+    color: rgb(250, 250, 250);
     height: 1200px;
     background-color: rgb(73, 109, 177);
-    clip-path: polygon(0 10%, 37% 0, 100vw 10%, 100vw 90%, 63% 100%, 0 90%);
+    clip-path: polygon(0 10%, 37% 0, 100% 10%, 100% 90%, 63% 100%, 0 90%);
 }
 
 .white-box {
-    height: 1000px;
+    min-height: 1000px;
     clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
 }
 
@@ -142,6 +153,17 @@ section h2, h3 {
 .icons {
     font-size: 5em;
     text-align: center;
+    margin-top: 24px;
+}
+.icons>* {
+    margin: 0 5px;
+}
+.white-box .icons > img {
+    max-width: 100px
+}
+
+.blue-box .icons > img {
+    max-width: 175px;
 }
 
 .divider h2 {
@@ -169,8 +191,8 @@ section h2, h3 {
 }
 
 .nav {
-    flex-wrap: nowrap;
-    width: 100vw;
+    width: 100%;
+    max-width: 100%;
     height: 30px;
     color: rgb(250, 250, 250);
     background-color: rgb(73, 109, 177);
@@ -204,7 +226,7 @@ section h2, h3 {
 
 footer {
     height: 15vh;
-    color: rgb(250, 250, 250);    
+    color: rgb(250, 250, 250);
     clip-path: polygon(0 40%, 37% 0, 100% 40%, 100% 100%, 0 100%);
     background-color: rgb(73, 109, 177);
 }
@@ -219,16 +241,18 @@ i.devicon-github-plain, i.devicon-github-colored {
 
 @media screen and (max-width: 768px) {
     h1 {
-        font-size: 4em;
+        font-size: 3.25em;
     }
     p {
         font-size: 1em;
     }
     .nav {
         justify-content: space-around;
+        width: 100%
     }
     .blue-box, .white-box {
         height: 1600px;
+        min-width: 100%;
     }
     .white-box .work-img-container {
         order: -1;
@@ -242,5 +266,8 @@ i.devicon-github-plain, i.devicon-github-colored {
     }
     .connect {
         height: 800px;
+    }
+    .work-img-container img {
+        max-width: 300px;
     }
 }
