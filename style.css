@@ -122,8 +122,8 @@ a.link:hover:after, a>h2:hover:after, ul.nav>li>a:hover:after, .connect a:hover:
 .work-img-container img {
     /* margin: 10px; */
     max-width: 350px;
-    max-height: 400px;
     height: auto;
+    max-height: 400px;
     border-radius: 10px;
 }
 
