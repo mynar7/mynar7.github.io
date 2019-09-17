@@ -43,7 +43,7 @@ h2 {
 }
 
 h3 {
-    font-weight: 400;
+    /* font-weight: 400; */
     font-size: 1.5em;
 }
 
@@ -188,6 +188,7 @@ section h2, h3 {
 
 .jumbo-text {
     height: 80vh;
+    text-align: center;
 }
 
 .nav {
@@ -218,6 +219,25 @@ section h2, h3 {
 
 .hiei .text-col {
     margin: 0 50px;
+}
+
+.hiei img {
+  width: 30px;
+  margin: 0 5px;
+  border-radius: 5px;
+}
+
+.hiei strong {
+  font-size: 1.3rem
+}
+.hiei .link {
+  /* font-size: 1.2rem; */
+  font-weight: 700;
+}
+.hiei .emoji {
+  display: block;
+  float: left;
+  font-size: 3.5rem
 }
 
 .connect {
