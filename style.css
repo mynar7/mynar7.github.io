@@ -270,8 +270,8 @@ i.devicon-github-plain, i.devicon-github-colored {
         justify-content: space-around;
         width: 100%
     }
-    .blue-box, .white-box {
-        height: 1600px;
+    .blue-box, .white-box:not(.hiei):not(.connect) {
+        height: 1650px;
         min-width: 100%;
     }
     .white-box .work-img-container {
