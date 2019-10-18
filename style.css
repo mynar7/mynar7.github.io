@@ -154,16 +154,20 @@ section h2, h3 {
     font-size: 5em;
     text-align: center;
     margin-top: 24px;
+    min-width: 300px;
+    width: 70%;
 }
 .icons>* {
-    margin: 0 5px;
+    margin: 5px;
 }
 .white-box .icons > img {
-    max-width: 100px
+    max-width: 150px;
+    max-height: 50px;
 }
 
 .blue-box .icons > img {
-    max-width: 175px;
+    max-height: 50px;
+    max-width: 150px;
 }
 
 .divider h2 {
